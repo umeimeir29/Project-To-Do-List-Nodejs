@@ -31,13 +31,10 @@ Pengguna dapat menambahkan, mengedit, menyelesaikan, dan menghapus tugas. Data d
    (Run app on emulator or device)
    ```bash
    npm install
-  (atau install secara otomatis dengan npm install)
-   ```bash
-   npm install express ejs body-parser express-session
-   ```bash
    node app.js
-   ```bash
    http://localhost:3000
+
+  
 
   
    
