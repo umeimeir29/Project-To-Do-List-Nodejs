@@ -23,21 +23,13 @@ Pengguna dapat menambahkan, mengedit, menyelesaikan, dan menghapus tugas. Data d
 
 1. Clone repository ini  
    ```bash
-   git clone https://github.com/achill75/HouseBooking.git
+   git clone https://github.com/umeimeir29/Project-To-Do-List-Nodejs.git
 2. Masuk ke direktori proyek
    ```bash
-   cd HouseBooking
+   cd Project-To-Do-List-Nodejs
 3. Open with Android Studio
    (Run app on emulator or device)
    ```bash
    npm install
    node app.js
    http://localhost:3000
-
-  
-
-  
-   
-   
-   
-
