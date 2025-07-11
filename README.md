@@ -2,9 +2,16 @@
 
 ![image alt](https://github.com/umeimeir29/Project-To-Do-List-Nodejs/blob/a31a216c8efb1e5a850731dc55bd59382d88ce62/todo-list.png)
 
+---
+## 🌀 Loading...
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" width="80%" />
+</p>
+
+---
 Aplikasi To Do List sederhana berbasis web yang dibuat menggunakan **Node.js**, **Express**, **EJS**, dan **Bootstrap**.  
 Pengguna dapat menambahkan, mengedit, menyelesaikan, dan menghapus tugas. Data disimpan secara lokal dalam file `todos.json`.
-
 ---
 
 ## 🚀 Fitur
@@ -29,8 +36,8 @@ Pengguna dapat menambahkan, mengedit, menyelesaikan, dan menghapus tugas. Data d
 2. Masuk ke direktori proyek
    ```bash
    cd Project-To-Do-List-Nodejs
-3. Open with Android Studio
-   (Run app on emulator or device)
+3. Open with Visual Studio Code
+   (Run app on Terminal)
    ```bash
    npm install
    node app.js
