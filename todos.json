@@ -1,0 +1,22 @@
+[
+  {
+    "text": "Belajar Coding Bersama Teman Komunitas",
+    "date": "2025-05-03",
+    "completed": true
+  },
+  {
+    "text": "Belajar Bahasa Inggris",
+    "date": "2025-05-05",
+    "completed": false
+  },
+  {
+    "text": "Makan Bersama Nisa Malam Minggu",
+    "date": "2025-05-03",
+    "completed": true
+  },
+  {
+    "text": "Belajar Cara Menggunakan Flutter",
+    "date": "2025-06-14",
+    "completed": false
+  }
+]

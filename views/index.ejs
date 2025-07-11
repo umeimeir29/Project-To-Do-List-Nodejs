@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo-List</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <% if (messages.success) { %>
+        <div class="alert alert-success alert-dismissible fade show text-center" role="alert">
+          <%= messages.success[0] %>
+        </div>
+      <% } %>
+      
+      
+      <h1 class="judul-utama"> MY TO DO LIST <br><br>📃</h1>
+
+    <form action="/add" method="POST">
+      <input type="text" name="todo" placeholder="Masukan Teks" required>
+      <input type="date" name="date" required> <!-- Tambahan input tanggal -->
+    <button type="submit">✚</button>
+
+    </form>
+
+    <div class="todo-list">
+      <% todos.forEach((todo, index) => { %>
+        <div class="todo-item">
+          
+          <!-- Status Button -->
+          <form action="/complete/<%= index %>" method="POST" style="display:inline;">
+            <button type="submit"><%= todo.completed ? '✅' : '⭕' %></button>
+          </form>
+    
+         <!-- Teks dan tanggal -->
+      <div style="flex: 1; padding-left: 10px;">
+        <div style="font-weight: bold;"><%= todo.text %></div>
+        <div style="font-size: 0.8em; color: #ccc; margin-top: 6px;">
+          📅 <%= todo.date && todo.date !== '' ? new Date(todo.date).toLocaleDateString('id-ID') : 'Tidak ada tanggal' %>
+        </div>
+      </div>
+    
+          
+          <!-- Tombol Edit -->
+          <form action="/edit/<%= index %>" method="get" style="display:inline;">
+          <button type="submit">✏️</button>
+          </form>
+          
+          <!-- Delete Button -->
+          <form action="/delete/<%= index %>" method="POST" style="display:inline;">
+            <button type="submit">❌</button>
+          </form>
+        </div>
+      <% }) %>
+    </div>
+    
+
+  </div>
+  <script>
+  // Script untuk menghilangkan alert setelah 3 detik
+  setTimeout(() => {
+    const alert = document.querySelector('.alert');
+    if (alert) {
+      alert.classList.remove('show');
+      alert.classList.add('hide');
+    }
+  }, 3000);
+</script>
+
+</body>
+</html>
