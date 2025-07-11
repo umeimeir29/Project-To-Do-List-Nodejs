@@ -1,6 +1,6 @@
 # 📝 MY TO DO LIST - Node.js + EJS
 
-![image alt]([image_url](https://github.com/umeimeir29/Project-To-Do-List-Nodejs/blob/a31a216c8efb1e5a850731dc55bd59382d88ce62/todo-list.png))
+![image alt](https://github.com/umeimeir29/Project-To-Do-List-Nodejs/blob/a31a216c8efb1e5a850731dc55bd59382d88ce62/todo-list.png)
 
 Aplikasi To Do List sederhana berbasis web yang dibuat menggunakan **Node.js**, **Express**, **EJS**, dan **Bootstrap**.  
 Pengguna dapat menambahkan, mengedit, menyelesaikan, dan menghapus tugas. Data disimpan secara lokal dalam file `todos.json`.
